@@ -152,7 +152,7 @@ export async function getStaticProps() {
 
     return {
         props: { products },
-        revalidate: 60; // regenerate after every 60 second
+        revalidate: 60 // regenerate after every 60 second
     }
 }
 
@@ -192,6 +192,8 @@ export default function Products({ products }) {
 //  large app with lots of apge and u can't re-build all on every change (larger blogs)
 // good SEO + fast speed
 
+
+// --------------------------------------------------------
 
 //  getServerSideProps -> Next.js function used to fetch data at req time on server
 //  every time a user req oage server run this  fn fetch data and generate fresh HTML to send to client
